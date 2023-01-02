@@ -3,7 +3,7 @@ var app=express();
 var url=require("url");
 var fs=require("fs");
 
-app.get((req,res)=>{
+app.get('/',(req,res)=>{
     res.sendFile("./log.html",{root:__dirname});
 });
 app.listen(8888);
